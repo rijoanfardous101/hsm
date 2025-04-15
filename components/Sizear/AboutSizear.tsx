@@ -1,6 +1,6 @@
 import { FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
-import { MdEmail, MdOutlineEmail } from "react-icons/md";
+import { MdOutlineEmail } from "react-icons/md";
 
 const AboutSizear = () => {
   return (

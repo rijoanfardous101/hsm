@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { SiGooglescholar, SiResearchgate, SiOrcid } from "react-icons/si";
 import AreaOfFocusImage from "@/public/area-of-focus-image.jpeg";
 
 const AreaOfFocus = () => {

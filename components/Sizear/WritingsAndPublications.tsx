@@ -1,8 +1,8 @@
 import { SiGooglescholar, SiOrcid, SiResearchgate } from "react-icons/si";
-import Blog from "./Blog";
+// import Blog from "./Blog";
 import OpinionArticle from "./OpinionArticle";
 import PublicationsInPeerReviewed from "./PublicationsInPeerReviewed";
-import Report from "./Report";
+// import Report from "./Report";
 // import { motion } from "framer-motion";
 // import { SiGooglescholar, SiResearchgate, SiOrcid } from "react-icons/si";
 

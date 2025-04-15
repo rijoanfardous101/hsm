@@ -1,5 +1,4 @@
 import EducationalJourney from "./EducationalJourney";
-import MajorAcademicShortCourses from "./MajorAcademicShortCourses";
 
 /* eslint-disable react/no-unescaped-entities */
 const EducationalBackground = () => {
