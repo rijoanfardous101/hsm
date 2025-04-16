@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Phone, Facebook, FileText } from "lucide-react";
+import { Mail, Facebook } from "lucide-react";
 import { FaLinkedinIn } from "react-icons/fa";
 
 export default function ContactSection() {
