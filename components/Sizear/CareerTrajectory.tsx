@@ -77,11 +77,11 @@ const CareerTrajectory = () => {
   ];
 
   return (
-    <div className=" bg-[#001844]">
+    <div className=" bg-[#D5E5D5]/30">
       <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-16 pb-16 pt-12 ">
-        <h3 className="text-2xl md:text-2xl font-bold underline underline-offset-[6px] mb-6 font-roboto text-[#8ec6ee] decoration-[#FFCE00]">
+        <h3 className="text-2xl md:text-2xl font-bold underline underline-offset-[6px] mb-6 font-roboto text-[#0070c0] decoration-[#FFCE00]">
           Career Trajectory |{" "}
-          <span className="text-white font-normal text-lg">
+          <span className="text-black font-normal text-lg">
             12 years of experience
           </span>
         </h3>

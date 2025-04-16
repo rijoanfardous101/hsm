@@ -30,11 +30,17 @@ const ConferenceAwards = () => {
     },
   ];
 
+  const colors = [
+    "hover:bg-[#FFCE00]",
+    "hover:bg-[#ef4444]",
+    "hover:bg-[#2D8CBB]",
+  ];
+
   return (
     <div className="py-16 bg-gradient-to-r from-green-50 via-white to-green-50 p-8 rounded-md shadow-sm">
-      <h3 className="text-2xl md:text-2xl font-bold text-gray-700 mb-8">
+      <h3 className="text-xl font-bold  font-roboto text-[#0070c0]  pb-6 ">
         🎤{" "}
-        <span className="underline underline-offset-[9px] ">
+        <span className="decoration-[#ef4444] underline underline-offset-[6px]">
           Conference Presentation and Awards
         </span>
       </h3>
@@ -49,18 +55,22 @@ const ConferenceAwards = () => {
           <motion.div
             key={index}
             // whileHover={{ scale: 1.02 }}
-            className="flex items-start space-x-6 bg-white shadow-sm rounded-lg p-5 border-l-4 border-green-500 transition-all duration-300"
+            className={`flex items-start space-x-6 bg-white shadow-sm rounded-lg p-5 border-l-4 border-green-500 transition-all duration-300 group ${
+              colors[index % colors.length]
+            }`}
           >
             <FaTrophy className="text-green-500 text-4xl flex-shrink-0" />
             <div>
-              <h3 className="text-lg font-semibold text-gray-900">
+              <h3 className="text-lg font-semibold text-gray-900 group-hover:text-black">
                 {award.title}
               </h3>
-              <p className="text-sm text-gray-600">🗓 Year: {award.year}</p>
-              <p className="text-sm text-gray-700 font-medium">
+              <p className="text-sm text-gray-600 group-hover:text-black">
+                🗓 Year: {award.year}
+              </p>
+              <p className="text-sm text-gray-700 font-medium group-hover:text-black">
                 📢 {award.event}
               </p>
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-gray-600 group-hover:text-black">
                 🎓 Organized by: {award.organizer}
               </p>
             </div>

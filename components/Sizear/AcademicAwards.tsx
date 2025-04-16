@@ -18,10 +18,19 @@ const AcademicAwards = () => {
     },
   ];
 
+  const colors = [
+    // "hover:bg-[#FFCE00]",
+    "hover:bg-[#ef4444]",
+    "hover:bg-[#2D8CBB]",
+  ];
+
   return (
     <div className="py-16 mt-8 bg-gradient-to-r from-yellow-50 via-white to-yellow-50 p-8 rounded-md shadow-sm">
-      <h3 className="text-2xl md:text-2xl font-bold text-gray-700  mb-8">
-        🎓 <span className="underline underline-offset-4">Academic Awards</span>
+      <h3 className="text-xl font-bold  font-roboto text-[#0070c0]  pb-6 ">
+        🎓{" "}
+        <span className="decoration-[#ef4444] underline underline-offset-[6px]">
+          Academic Awards
+        </span>
       </h3>
 
       {/* Awards List */}
@@ -35,7 +44,9 @@ const AcademicAwards = () => {
           <motion.div
             key={index}
             // whileHover={{ borderColor }}
-            className="flex items-center space-x-6 bg-white shadow-sm rounded-lg p-5 border-l-4 border-yellow-500 transition-all duration-300"
+            className={`flex items-center space-x-6 bg-white shadow-sm rounded-lg p-5 border-l-4 border-yellow-500 transition-all duration-300 group ${
+              colors[index % colors.length]
+            }`}
           >
             <FaAward className="text-yellow-500 text-4xl flex-shrink-0" />
             <div>

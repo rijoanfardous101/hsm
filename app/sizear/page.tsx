@@ -17,8 +17,6 @@ import WritingsAndPublications from "@/components/Sizear/WritingsAndPublications
 
 const Sizear = () => {
   return (
-    // min-h-[calc(100vh-115px)]
-    // <section className="bg-gradient-to-b from-[#F9F6F3] to-white py-16 px-12">
     <section className="">
       <AboutSizear />
 

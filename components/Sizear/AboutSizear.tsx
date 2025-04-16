@@ -1,6 +1,6 @@
-import { FaLinkedin } from "react-icons/fa";
 import Image from "next/image";
 import { MdOutlineEmail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
 
 const AboutSizear = () => {
   return (
@@ -12,7 +12,7 @@ const AboutSizear = () => {
 
       <div className="relative max-w-6xl mx-auto flex flex-col md:flex-row gap-10 z-10 justify-between">
         {/* Left content */}
-        <div className="w-full md:w-1/2 text-gray-800">
+        <div className="w-full md:w-[80%] text-gray-800">
           {/* Name */}
           <h1 className="text-[36px] font-bold text-gray-900">
             <span className="text-[#0070c0]">Monaemul</span>{" "}
@@ -89,13 +89,13 @@ const AboutSizear = () => {
         </div>
 
         {/* Right image */}
-        <div className="flex justify-center md:justify-end items-start mt-10">
+        <div className="flex justify-center md:justify-end items-start">
           <Image
             src="/sizearImage.webp"
             alt="Monaemul Islam Sizear"
-            width={400}
+            width={300}
             height={200}
-            className="rounded-2xl"
+            className="rounded-2xl w-full"
           />
         </div>
       </div>

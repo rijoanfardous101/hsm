@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Mail, Facebook } from "lucide-react";
+import { Mail, Phone, Facebook, FileText } from "lucide-react";
 import { FaLinkedinIn } from "react-icons/fa";
 
 export default function ContactSection() {
@@ -18,8 +18,7 @@ export default function ContactSection() {
         </h3>
 
         <p className="text-gray-600 max-w-6xl mx-auto mb-8 mt-4">
-          You can connect with me on LinkedIn or Facebook. Feel free to reach
-          out via email.
+          You can connect with me on LinkedIn or Facebook.
         </p>
 
         {/* Social Links */}
@@ -46,6 +45,10 @@ export default function ContactSection() {
             <Facebook size={24} className="text-blue-600" /> Facebook
           </a>
         </motion.div>
+
+        <p className="text-gray-600 max-w-6xl mx-auto mb-8 mt-4">
+          Feel free to reach out via email.
+        </p>
 
         {/* Contact Information */}
         <motion.div

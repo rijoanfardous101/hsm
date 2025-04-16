@@ -25,9 +25,9 @@ const organizerAwards = [
 const BestOrganizer = () => {
   return (
     <div className="py-16 bg-gradient-to-r from-cyan-50 via-white to-cyan-50 p-8 rounded-md shadow-sm">
-      <h3 className="text-2xl md:text-2xl font-bold text-gray-700  mb-8 ">
+      <h3 className="text-xl font-bold  font-roboto text-[#0070c0]  pb-6 ">
         🏆{" "}
-        <span className="underline underline-offset-4">
+        <span className="decoration-[#ef4444] underline underline-offset-[6px]">
           Best Organizer Award
         </span>
       </h3>

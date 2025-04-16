@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { colors } from "@/lib/utils";
 
 const PublicHealth = () => {
   const articles = [
@@ -84,7 +85,9 @@ const PublicHealth = () => {
           <motion.div
             key={index}
             whileHover={{ borderColor: "#2196F3" }}
-            className="bg-white border shadow-sm rounded-md p-6 border-l-4 border-green-500 flex items-start space-x-6"
+            className={`bg-white border shadow-sm rounded-md p-6 border-l-4 border-green-500 flex items-start space-x-6 group transition-all duration-300 ${
+              colors[index % colors.length]
+            }`}
           >
             {/* Left Side: Year */}
             <div className="w-1/4">

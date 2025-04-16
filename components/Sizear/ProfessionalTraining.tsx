@@ -53,6 +53,11 @@ const trainings = [
 ];
 
 export default function ProfessionalTraining() {
+  const colors = [
+    "hover:bg-[#FFCE00]",
+    "hover:bg-[#ef4444]",
+    "hover:bg-[#2D8CBB]",
+  ];
   return (
     <div className=" bg-slate-100 py-16">
       <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-16">
@@ -73,16 +78,22 @@ export default function ProfessionalTraining() {
           {trainings.map((item, index) => (
             <motion.div
               key={index}
-              whileHover={{ borderColor: "#FFCE00" }}
-              className="flex items-start space-x-4 bg-white shadow-sm rounded-md p-4 border-l-4 border-green-500"
+              // whileHover={{ borderColor: "#FFCE00" }}
+              className={`flex items-start space-x-4 bg-white shadow-sm rounded-md p-4 border-l-4 border-green-500 group transition-all duration-300 ${
+                colors[index % colors.length]
+              }`}
             >
               <FaCheckCircle className="text-green-500 text-2xl flex-shrink-0" />
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3 className="text-lg font-semibold text-gray-900 group-hover:text-black">
                   {item.title}
                 </h3>
-                <p className="text-md text-gray-700">{item.organization}</p>
-                <p className="text-sm text-gray-500">{item.year}</p>
+                <p className="text-md text-gray-700 group-hover:text-black">
+                  {item.organization}
+                </p>
+                <p className="text-sm text-gray-500 group-hover:text-black">
+                  {item.year}
+                </p>
               </div>
             </motion.div>
           ))}

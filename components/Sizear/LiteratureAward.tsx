@@ -12,9 +12,11 @@ const LiteratureAward = () => {
 
   return (
     <div className="py-16 bg-gradient-to-r from-blue-50 via-white to-blue-50 p-8 rounded-md shadow-sm">
-      <h3 className="text-2xl md:text-2xl font-bold text-gray-700  mb-8">
+      <h3 className="text-xl font-bold  font-roboto text-[#0070c0]  pb-6 ">
         ✍️{" "}
-        <span className="underline underline-offset-4">Literature Award</span>
+        <span className="decoration-[#ef4444] underline underline-offset-[6px]">
+          Literature Award
+        </span>
       </h3>
 
       <motion.div
@@ -25,7 +27,7 @@ const LiteratureAward = () => {
       >
         <motion.div
           //   whileHover={{ scale: 1.02 }}
-          className="flex items-center space-x-6 bg-white shadow-sm rounded-lg p-5 border-l-4 border-blue-500 transition-all duration-300"
+          className="flex items-center space-x-6 bg-white shadow-sm rounded-lg p-5 border-l-4 border-blue-500 transition-all duration-300 group hover:bg-yellow-400"
         >
           <FaMedal className="text-blue-500 text-4xl flex-shrink-0" />
           <div>

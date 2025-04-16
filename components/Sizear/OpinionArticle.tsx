@@ -1,4 +1,5 @@
 "use client";
+import { colors } from "@/lib/utils";
 import { motion } from "framer-motion";
 
 const OpinionArticle = () => {
@@ -22,8 +23,8 @@ const OpinionArticle = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        whileHover={{ borderColor: "#FFCE00" }}
-        className="bg-white border shadow-sm rounded-md p-6 border-l-4 border-blue-500 flex items-start space-x-4 max-w-5xl mx-auto"
+        // whileHover={{ borderColor: "#FFCE00" }}
+        className={`bg-white border shadow-sm rounded-md p-6 border-l-4 border-blue-500 flex items-start space-x-4 max-w-5xl mx-auto group ${colors[0]}`}
       >
         <div className="w-1/4">
           <h3 className="text-lg font-semibold text-gray-900">
@@ -44,7 +45,7 @@ const OpinionArticle = () => {
             href={opinionArticle.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:underline text-sm"
+            className="text-blue-500 hover:underline text-sm group-hover:text-black"
           >
             {opinionArticle.link}
           </a>

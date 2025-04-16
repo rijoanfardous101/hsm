@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { colors } from "@/lib/utils";
 
 const CareerAndScholarship = () => {
   const articles = [
@@ -33,29 +34,33 @@ const CareerAndScholarship = () => {
           <motion.div
             key={index}
             whileHover={{ borderColor: "#2196F3" }}
-            className="bg-white border shadow-sm rounded-md p-6 border-l-4 border-green-500 flex items-start space-x-6"
+            className={`bg-white border shadow-sm rounded-md p-6 border-l-4 border-green-500 flex items-start space-x-6 group transition-all duration-300 ${
+              colors[index % colors.length]
+            }`}
           >
             {/* Left Side: Year */}
             <div className="w-1/4">
-              <h3 className="text-lg font-semibold text-gray-900">
+              <h3 className="text-lg font-semibold text-gray-900 group-hover:text-black">
                 {article.year}
               </h3>
             </div>
 
             {/* Right Side: Title & Source */}
             <div className="w-3/4">
-              <p className="text-md font-semibold text-gray-800">
+              <p className="text-md font-semibold text-gray-800 group-hover:text-black">
                 {/* Clickable Title */}
                 <a
                   href={article.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-500 hover:underline text-md transition duration-200"
+                  className="text-blue-500 hover:underline text-md transition duration-200 group-hover:text-black"
                 >
                   {article.title}
                 </a>
               </p>
-              <p className="text-gray-600 text-sm">{article.source}</p>
+              <p className="text-gray-600 text-sm group-hover:text-black">
+                {article.source}
+              </p>
             </div>
           </motion.div>
         ))}

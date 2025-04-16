@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { colors } from "@/lib/utils";
 
 const PublicationsInPeerReviewed = () => {
   const publications = [
@@ -67,8 +68,10 @@ const PublicationsInPeerReviewed = () => {
         {publications.map((item, index) => (
           <motion.div
             key={index}
-            whileHover={{ borderColor: "#FFCE00" }}
-            className="bg-white border shadow-sm rounded-md p-6 border-l-4 border-blue-500 flex items-center space-x-6"
+            // whileHover={{ borderColor: "#FFCE00" }}
+            className={`bg-white border shadow-sm rounded-md p-6 border-l-4 border-blue-500 flex items-center space-x-6 group ${
+              colors[index % colors.length]
+            }`}
           >
             {/* Left Side: Year */}
             <div className="w-1/4">
@@ -92,7 +95,7 @@ const PublicationsInPeerReviewed = () => {
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-blue-500 text-sm mt-1 hover:underline"
+                className="text-blue-500 text-sm mt-1 hover:underline group-hover:text-black"
               >
                 {item.link}
               </a>

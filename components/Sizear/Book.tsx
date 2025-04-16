@@ -18,7 +18,7 @@ const BookSection = () => {
 
   return (
     <div className="bg-slate-50">
-      <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-16 py-16">
+      <div className="max-w-screen-xl mx-auto sm:px-6 lg:px-16 py-12">
         {/* <h2 className="text-3xl md:text-4xl font-extrabold text-gray-800 text-center">
           Book
           <span className="block w-24 h-1 bg-blue-500 mx-auto mt-2 rounded-full"></span>
@@ -28,8 +28,8 @@ const BookSection = () => {
           Book
         </h3>
 
-        <div className="pt-16">
-          <h3 className="text-2xl md:text-2xl flex items-center font-bold text-gray-600 underline underline-offset-4 mb-8">
+        <div className="pt-8">
+          <h3 className="text-2xl md:text-2xl flex items-center font-bold text-gray-600 underline underline-offset-[6px] mb-8">
             <FaBook className="mr-2 text-xl" /> অক্ষরবন্দি নেদারল্যান্ডস -
             মোনায়েমুল ইসলাম সিজার
           </h3>
