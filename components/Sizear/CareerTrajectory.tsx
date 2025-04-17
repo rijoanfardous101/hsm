@@ -105,7 +105,7 @@ const CareerTrajectory = () => {
               >
                 <div className="ml-4">
                   <h3
-                    className={`text-lg  font-bold  text-[#155f82] group-hover:translate-x-6 transition-all duration-300 group-hover:text-white`}
+                    className={`text-lg  font-bold  text-[#155f82] transition-all duration-300 group-hover:text-white`}
                   >
                     {exp.title}
                   </h3>

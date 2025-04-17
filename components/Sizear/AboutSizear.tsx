@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { FaLinkedin } from "react-icons/fa";
 
 const AboutSizear = () => {
   return (
@@ -40,7 +39,7 @@ const AboutSizear = () => {
           </p>
 
           {/* Paragraphs */}
-          <div className="mt-6 space-y-5  text-gray-700">
+          <div className="mt-2 space-y-4  text-gray-700">
             <p className="text-[17px] leading-[26px]">
               I am Monaemul Islam Sizear, widely known as Sizear. Public health
               is my profession, passion, and purpose by choice. My mission is to
@@ -53,7 +52,7 @@ const AboutSizear = () => {
               published research in peer-reviewed journals.
             </p>
 
-            <p className="text-[17px]  leading-[26px]">
+            <p className="text-[17px] leading-[26px]">
               I firmly realize that poor health outcomes are deeply rooted in
               low education levels, socio-economic disparities, structural
               inequalities, and weak governance. To address these complexities,
@@ -64,7 +63,7 @@ const AboutSizear = () => {
               solutions to tackle global health challenges.
             </p>
 
-            <p className="text-[17px]  leading-[26px]">
+            <p className="text-[17px] leading-[26px]">
               Sizear is a health systems advocate who aspires to be a global
               health champion, committed to transforming lives.
             </p>
@@ -92,86 +91,97 @@ const AboutSizear = () => {
               href="https://www.linkedin.com/in/monaemulsizear/"
               target="_blank"
             >
-              <FaLinkedin className="text-[26px] text-blue-700 hover:text-blue-900" />
-            </a>
-            <a href="mailto:sizear.monaemul@gmail.com" className="">
-              {/* <MdEmail className="text-[30px] text-" /> */}
-
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 version="1.1"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
-                width="30"
-                height="30"
+                width="36"
+                height="36"
                 x="0"
                 y="0"
-                viewBox="0 0 512 512"
+                viewBox="0 0 152 152"
                 // style={{ enableBackground: "new 0 0 512 512" }}
                 xmlSpace="preserve"
               >
                 <g>
-                  <rect
-                    width="446"
-                    height="305.613"
-                    fill="#e57e25"
-                    rx="25.31"
-                    opacity="1"
-                    data-original="#e57e25"
-                  ></rect>
-                  <path
-                    fill="#f29c1f"
-                    d="M435.739 300.212A26.13 26.13 0 0 0 446 279.434V26.179A26.179 26.179 0 0 0 419.821 0H166.508L435.2 300.014z"
-                    opacity="1"
-                    data-original="#f29c1f"
-                  ></path>
-                  <path
-                    fill="#f29c1f"
-                    d="M279.492 0H26.179A26.179 26.179 0 0 0 0 26.179v253.255a26.124 26.124 0 0 0 9.7 20.334l1.1.246z"
-                    opacity="1"
-                    data-original="#f29c1f"
-                  ></path>
-                  <path
-                    fill="#f0c419"
-                    d="M419.821 0H26.179A26.179 26.179 0 0 0 0 26.179v10.063l188.916 130.177a60.068 60.068 0 0 0 68.168 0L446 36.242V26.179A26.179 26.179 0 0 0 419.821 0z"
-                    opacity="1"
-                    data-original="#f0c419"
-                  ></path>
-                  <path
-                    fill="#ff5364"
-                    d="M116.126 512a8 8 0 0 1-5.157-14.119l110.588-91.916a8 8 0 1 1 10.306 12.235l-110.587 91.919a7.97 7.97 0 0 1-5.15 1.881z"
-                    opacity="1"
-                    data-original="#ff5364"
-                  ></path>
-                  <path
-                    fill="#35acef"
-                    d="M209.927 494.588a8 8 0 0 1-5.275-14.018l27.222-24.87a8 8 0 1 1 10.543 12.035l-27.217 24.87a7.967 7.967 0 0 1-5.273 1.983z"
-                    opacity="1"
-                    data-original="#35acef"
-                  ></path>
-                  <path
-                    fill="#285680"
-                    d="m239.598 336.348 50.471 120.895 92.207-138.322 129.63-123.515z"
-                    opacity="1"
-                    data-original="#285680"
-                  ></path>
-                  <path
-                    fill="#7ed0fc"
-                    d="m511.906 194.516-266.03 155.177-78.277-20.307z"
-                    opacity="1"
-                    data-original="#7ed0fc"
-                  ></path>
-                  <path
-                    fill="#35acef"
-                    d="M418.218 297.138 290.069 457.243l15.123-91.701z"
-                    opacity="1"
-                    data-original="#35acef"
-                  ></path>
-                  <path
-                    fill="#7ed0fc"
-                    d="M511.906 195.406c.073-.227.169-.4 0-.232L305.192 365.542 433.246 400.4z"
-                    opacity="1"
-                    data-original="#7ed0fc"
-                  ></path>
+                  <g data-name="Layer 2">
+                    <g data-name="10.linkedin">
+                      <circle
+                        cx="76"
+                        cy="76"
+                        r="76"
+                        fill="#0b69c7"
+                        opacity="1"
+                        data-original="#0b69c7"
+                      />
+                      <g fill="#fff">
+                        <path
+                          d="M59 48.37A10.38 10.38 0 1 1 48.63 38 10.38 10.38 0 0 1 59 48.37z"
+                          fill="#ffffff"
+                          opacity="1"
+                          data-original="#ffffff"
+                        />
+                        <rect
+                          width="16.06"
+                          height="50.93"
+                          x="40.6"
+                          y="63.07"
+                          rx="2.57"
+                          fill="#ffffff"
+                          opacity="1"
+                          data-original="#ffffff"
+                        />
+                        <path
+                          d="M113.75 89.47v22.17a2.36 2.36 0 0 1-2.36 2.36H99.67a2.36 2.36 0 0 1-2.36-2.36V90.16c0-3.21.93-14-8.38-14-7.22 0-8.69 7.42-9 10.75v24.78a2.36 2.36 0 0 1-2.34 2.31H66.25a2.35 2.35 0 0 1-2.36-2.36v-46.2a2.36 2.36 0 0 1 2.36-2.37h11.34A2.37 2.37 0 0 1 80 65.44v4c2.68-4 6.66-7.12 15.13-7.12 18.73-.01 18.62 17.52 18.62 27.15z"
+                          fill="#ffffff"
+                          opacity="1"
+                          data-original="#ffffff"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </svg>
+            </a>
+            <a href="mailto:sizear.monaemul@gmail.com" className="">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                version="1.1"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                width="36"
+                height="36"
+                x="0"
+                y="0"
+                viewBox="0 0 512 512"
+                xmlSpace="preserve"
+              >
+                <g>
+                  <g data-name="Layer 2">
+                    <g data-name="01.mail">
+                      <circle
+                        cx="256"
+                        cy="256"
+                        r="256"
+                        fill="#2196f3"
+                        opacity="1"
+                        data-original="#2196f3"
+                      />
+                      <g fill="#fff">
+                        <path
+                          d="M255.94 268.64 121 201.32v133.76a25.66 25.66 0 0 0 25.59 25.59h218.82A25.66 25.66 0 0 0 391 335.08V202.73z"
+                          fill="#ffffff"
+                          opacity="1"
+                          data-original="#ffffff"
+                        />
+                        <path
+                          d="M256.06 243.36 391 177.5v-.58a25.66 25.66 0 0 0-25.59-25.59H146.59A25.66 25.66 0 0 0 121 176z"
+                          fill="#ffffff"
+                          opacity="1"
+                          data-original="#ffffff"
+                        />
+                      </g>
+                    </g>
+                  </g>
                 </g>
               </svg>
             </a>
