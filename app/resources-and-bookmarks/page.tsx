@@ -84,7 +84,7 @@ const ResourcesAndBookmarksPage = () => {
   ];
 
   return (
-    <div>
+    <div className="pb-16">
       <div className="relative w-full min-h-[100px] border-t-2 border-[#FFCE00]">
         <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB] to-[#2D8CBB]/30 flex items-center ">
           <div className="max-w-screen-xl mx-auto flex justify-between items-center w-full px-16">

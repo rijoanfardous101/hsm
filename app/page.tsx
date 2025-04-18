@@ -15,7 +15,6 @@ import NewsNewsletterSection from "@/components/Homepage/NewsNewsletterSection";
 import BlogsInterviewsSection from "@/components/Homepage/BlogsInterviewsSection";
 import AboutSection from "@/components/Homepage/AboutSection";
 import ContactSection from "@/components/Homepage/ContactSection";
-import NewsletterForm from "@/components/NewsLetterSignup/NewsLetterSignup";
 // import SubscribeNewsletter from "@/components/Homepage/SubscribeNewsletter";
 
 export default function Home() {
@@ -48,8 +47,6 @@ export default function Home() {
       {/* <SubscribeNewsletter /> */}
 
       <ContactSection />
-
-      <NewsletterForm />
 
       {/* <Contact /> */}
     </>

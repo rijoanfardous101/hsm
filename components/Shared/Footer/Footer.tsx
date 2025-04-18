@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Logo4 from "@/public/logo/Logo4.jpeg";
+import NewsletterForm from "@/components/NewsLetterSignup/NewsLetterSignup";
 
 const Footer = () => {
   // Function to scroll to the top
@@ -17,7 +18,8 @@ const Footer = () => {
 
   return (
     <footer className="py-10 pt-16 bg-[#001844] text-white">
-      <div className="max-w-[1200px] mx-auto">
+      <NewsletterForm />
+      <div className="max-w-[1200px] mx-auto mt-8">
         {/* Horizontal line with Back to Top button aligned right */}
         <div className="flex items-center justify-center gap-5 pb-6">
           <div className="flex-1 border-t border-gray-400">

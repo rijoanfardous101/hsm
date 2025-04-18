@@ -3,14 +3,6 @@
 import { motion } from "framer-motion";
 
 import BookMarksSectionCard from "@/components/ui/BookMarksSectionCard";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import Link from "next/link";
 
 const bookmarksData = [
   {
@@ -37,46 +29,16 @@ const InterviewInsights = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* Page Title Section */}
-      <div className="relative w-full h-[150px] border-t-2 border-yellow-400">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-700/90 to-blue-500/40 flex items-center">
-          <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center w-full px-6 md:px-16 gap-4">
+      <div className="relative w-full h-[90px] border-t-2 border-yellow-400">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center">
+          <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-center items-center w-full px-6 md:px-16 gap-4">
             <h1 className="text-4xl md:text-5xl font-extrabold text-white">
               Interview and Insights
             </h1>
           </div>
         </div>
       </div>
-
-      {/* Breadcrumbs */}
-      <Breadcrumb className="py-6 px-6 md:px-16 max-w-screen-xl mx-auto text-sm md:text-base">
-        <BreadcrumbList className="flex flex-wrap gap-2">
-          <BreadcrumbItem>
-            <Link
-              href="/"
-              className="text-gray-700 hover:underline hover:text-blue-700"
-            >
-              Home
-            </Link>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator className="text-gray-600" />
-          <BreadcrumbItem>
-            <Link
-              href="/resources"
-              className="text-gray-700 hover:underline hover:text-blue-700"
-            >
-              Resources
-            </Link>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator className="text-gray-600" />
-          <BreadcrumbItem>
-            <BreadcrumbPage className="text-blue-800 font-semibold">
-              Interview and Insights
-            </BreadcrumbPage>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
-
-      {/* Content Section with Sidebar */}
+      ={/* Content Section with Sidebar */}
       <div className="max-w-screen-xl mx-auto px-6 md:px-16 flex flex-col md:flex-row gap-8">
         {/* Main Content */}
         <div className="flex-1">

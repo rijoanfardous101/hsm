@@ -1,12 +1,4 @@
 "use client";
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbList,
-  BreadcrumbPage,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
-import Link from "next/link";
 
 import { motion } from "framer-motion";
 import { FileText } from "lucide-react";
@@ -69,55 +61,17 @@ const writtenInterviews = [
 
 const WrittenInterviews = () => {
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="bg-gray-50 min-h-screen pb-16">
       {/* Page Title Section */}
-      <div className="relative w-full h-[150px] border-t-2 border-yellow-400">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-700/90 to-blue-500/40 flex items-center">
-          <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center w-full px-6 md:px-16 gap-4">
+      <div className="relative w-full h-[90px] border-t-2 border-yellow-400">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center">
+          <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-center items-center w-full px-6 md:px-16 gap-4">
             <h1 className="text-4xl md:text-5xl font-extrabold text-white">
               📝 Written Interviews
             </h1>
           </div>
         </div>
       </div>
-
-      {/* Breadcrumbs */}
-      <Breadcrumb className="py-6 px-6 md:px-16 max-w-screen-xl mx-auto text-sm md:text-base">
-        <BreadcrumbList className="flex flex-wrap gap-2">
-          <BreadcrumbItem>
-            <Link
-              href="/"
-              className="text-gray-700 hover:underline hover:text-blue-700"
-            >
-              Home
-            </Link>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator className="text-gray-600" />
-          <BreadcrumbItem>
-            <Link
-              href="/resources"
-              className="text-gray-700 hover:underline hover:text-blue-700"
-            >
-              Resources
-            </Link>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator className="text-gray-600" />
-          <BreadcrumbItem>
-            <Link
-              href="/resources/interview-and-insights"
-              className="text-gray-700 hover:underline hover:text-blue-700"
-            >
-              Interview and Insights
-            </Link>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator className="text-gray-600" />
-          <BreadcrumbItem>
-            <BreadcrumbPage className="text-blue-800 font-semibold">
-              Written Interviews
-            </BreadcrumbPage>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
 
       <div className="space-y-4 py-6 px-6 md:px-16 max-w-screen-xl mx-auto">
         {writtenInterviews.map((interview, index) => (

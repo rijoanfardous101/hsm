@@ -31,8 +31,8 @@ export default function NewsletterForm() {
     value ? "text-xs -top-2 left-1 text-white" : "top-2 left-2 text-white";
 
   return (
-    <div className="bg-[#CDEDEC]">
-      <div className="bg-destructive p-4 max-w-5xl mx-auto flex justify-center relative z-30 -mb-10">
+    <div className="">
+      <div className="bg-destructive p-4 max-w-5xl mx-auto flex justify-center relative z-30 -mt-[104px]">
         <form
           onSubmit={handleSubmit}
           className="flex flex-wrap items-center gap-2"

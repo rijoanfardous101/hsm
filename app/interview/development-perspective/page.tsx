@@ -10,9 +10,9 @@ import Link from "next/link";
 
 const DevelopmentPerspective = () => {
   return (
-    <div className="bg-gradient-to-r from-[#2D8CBB]/10 via-white to-[#2D8CBB]/10">
+    <div className="bg-gradient-to-r from-[#2D8CBB]/10 via-white to-[#2D8CBB]/10 pb-16">
       {/* Page Title Section */}
-      <div className="relative w-full h-[120px] border-t-2">
+      <div className="relative w-full h-[90px] border-t-2">
         <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 px-8 to-[#2D8CBB]/30 flex items-center">
           <div className="max-w-screen-xl mx-auto flex justify-center items-center w-full px-16 flex-wrap">
             <h1 className="text-2xl font-bold text-center text-white">

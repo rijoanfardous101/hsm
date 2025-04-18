@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const ResourcesOverview = () => {
   return (
-    <div className="">
+    <div className="pb-16">
       {/* Page Title Section */}
       <div className="relative w-full h-[85px] border-t-2 border-[#FFCE00]">
         <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center">

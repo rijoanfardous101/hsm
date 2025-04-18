@@ -1,11 +1,9 @@
 "use client";
 
 import NextButton from "@/components/Shared/NextButton";
-// import { motion } from "framer-motion";
 
-// import BookMarksSectionCard from "@/components/ui/BookMarksSectionCard";
-
-import { FaFilePdf, FaDownload, FaBookOpen } from "react-icons/fa";
+import { FaDownload, FaBookOpen } from "react-icons/fa";
+import Image from "next/image";
 
 const pdfs = [
   {
@@ -77,9 +75,9 @@ const pdfs = [
 
 const Books = () => {
   return (
-    <div className="bg-gray-50">
+    <div className="bg-gray-50 pb-16">
       {/* Page Title Section */}
-      <div className="relative w-full h-[85px] border-t-2 border-yellow-400">
+      <div className="relative w-full h-[90px] border-t-2 border-yellow-400">
         <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center">
           <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-center items-center w-full px-6 md:px-16 gap-4">
             <h1 className="text-4xl md:text-5xl font-extrabold text-white">
@@ -104,47 +102,51 @@ const Books = () => {
           <div className="max-w-screen-xl mx-auto px-6 md:px-16 pb-16 flex flex-col md:flex-row gap-8">
             {/* Main Content */}
 
-            <div className="flex-1">
-              {pdfs.map((pdf, index) => (
-                <div
-                  key={index}
-                  className="bg-white shadow-sm p-6 mb-2 flex items-center gap-4 border border-gray-200"
-                >
-                  <p>{index + 1}.</p>{" "}
-                  <FaFilePdf className="text-red-500 text-4xl" />
-                  <div className="flex-1">
-                    {/* Clickable Title with Hover Underline */}
-                    <a
-                      href={pdf.filePath}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <p className="text-base font-semibold text-gray-900 hover:underline">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mx-auto">
+              {pdfs.map((pdf, index) => {
+                const imageName = pdf.title + ".png";
+                const imagePath = `/essential-reading-list/${imageName}`;
+
+                return (
+                  <div
+                    key={index}
+                    className=" rounded-lg shadow-md overflow-hidden border border-gray-200 w-[350px] sm:w-[400px]"
+                  >
+                    <div className="w-[350px] sm:w-[400px] h-[450px]">
+                      <Image
+                        src={imagePath}
+                        alt={pdf.title}
+                        width={350}
+                        height={500}
+                        className="object-cover w-full h-full"
+                      />
+                    </div>
+
+                    <div className="p-4 flex flex-col justify-between">
+                      <h3 className="font-semibold text-md text-gray-800 mb-4 h-10">
                         {pdf.title}
-                      </p>
-                    </a>
-                    {/* <p className="text-gray-700 text-sm">{pdf.description}</p> */}
+                      </h3>
+                      <div className="flex gap-2 mt-auto">
+                        <a
+                          href={pdf.filePath}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="flex-1 flex items-center justify-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-white text-sm font-medium px-4 py-2 rounded-md"
+                        >
+                          <FaBookOpen /> Read
+                        </a>
+                        <a
+                          href={pdf.filePath}
+                          download
+                          className="flex-1 flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium px-4 py-2 rounded-md"
+                        >
+                          <FaDownload /> Download
+                        </a>
+                      </div>
+                    </div>
                   </div>
-                  {/*  */}
-                  {/* Read Button */}
-                  <a
-                    href={pdf.filePath}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white font-medium text-sm px-4 py-2 rounded-md transition duration-300"
-                  >
-                    <FaBookOpen /> Read
-                  </a>
-                  {/* Download Button */}
-                  <a
-                    href={pdf.filePath}
-                    download
-                    className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium text-sm px-4 py-2 rounded-md transition duration-300"
-                  >
-                    <FaDownload /> Download
-                  </a>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>

@@ -152,7 +152,7 @@ const WhyHealthSystemsMatterPage = () => {
 
   return (
     // <div className="bg-gradient-to-r from-[#6ACBD4]/10 via-white to-[#6ACBD4]/10">
-    <div className="bg-white">
+    <div className="bg-white pb-16">
       {/* Page Title Section */}
       <div className="relative w-full border-t-2  bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 py-6">
         <div className="max-w-screen-lg mx-auto px-10 ">

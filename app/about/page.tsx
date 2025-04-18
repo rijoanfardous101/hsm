@@ -100,7 +100,7 @@ const AboutPage = () => {
   ];
 
   return (
-    <div className=" bg-gradient-to-r from-[#2D8CBB]/10 via-white to-[#2D8CBB]/10">
+    <div className=" bg-gradient-to-r from-[#2D8CBB]/10 via-white to-[#2D8CBB]/10 pb-16">
       {/* Page Title Section */}
       <div className="relative w-full h-auto md:h-[90px] border-t-2 border-[#FFCE00]">
         <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center">
