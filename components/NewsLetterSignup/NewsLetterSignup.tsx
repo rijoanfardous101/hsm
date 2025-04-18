@@ -32,7 +32,7 @@ export default function NewsletterForm() {
 
   return (
     <div className="">
-      <div className="bg-destructive p-4 max-w-5xl mx-auto flex justify-center relative z-30 -mt-[104px]">
+      <div className="bg-[#2D8CBB] p-4 max-w-5xl mx-auto flex justify-center relative z-30 -mt-[104px]">
         <form
           onSubmit={handleSubmit}
           className="flex flex-wrap items-center gap-2"
@@ -48,7 +48,7 @@ export default function NewsletterForm() {
                 name={field}
                 value={formData[field as keyof FormData]}
                 onChange={handleChange}
-                className="peer w-48 h-12 px-2 pt-4 text-white bg-[#a3353b]/40 focus:outline-none text-sm font-roboto "
+                className="peer w-48 h-12 px-2 pt-4 text-white bg-[#a3353b]/20 focus:outline-none text-sm font-roboto "
               />
               <label
                 className={`absolute pointer-events-none transition-all duration-200 ease-in-out font-bold mt-1 top-0.5 opacity-80 ${floatingLabelClass(

@@ -13,7 +13,7 @@ const bookmarksData = [
   // },
   {
     title: "Subscribe for newsletter",
-    href: "/newsletter/subscribe-for-newsletter",
+    href: "/subscribe",
     description:
       "If you’re interested in receiving updates on public health issues, events, blogs, and interviews directly in your inbox, a single subscription is all you need. If the newsletter doesn’t appear in your inbox, please check your spam or junk folder.",
     Icon: "https://img.freepik.com/premium-vector/subscription-newsletter-pop-up-banner-template-flat-design_249405-203.jpg?w=826",

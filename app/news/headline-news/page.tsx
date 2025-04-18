@@ -53,7 +53,7 @@ const HeadlineNews = () => {
         </div>
       </div>
       <NextButton
-        href="/news/do-you-know"
+        href="/news/data-in-global-health"
         text="Next"
         className="bg-[#00DFC0] text-black mt-16"
       />

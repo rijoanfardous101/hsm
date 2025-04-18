@@ -33,7 +33,7 @@ const resourcesSubLinks = [
 
   {
     title: "Data in Global Health",
-    href: "/news/do-you-know",
+    href: "/news/data-in-global-health",
     description: "",
     img: img1,
   },

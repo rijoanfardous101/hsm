@@ -25,7 +25,7 @@ const YoutubePage = () => {
         </p>
         <p className="text-xl text-[#001844] text-justify mt-4">
           Stay connected for updates on the official launch. Subscribe to our{" "}
-          <Link href="/newsletter" className="underline text-blue-500">
+          <Link href="/subscribe" className="underline text-blue-500">
             newsletter
           </Link>{" "}
           and follow us on social media to be the first to know when the channel

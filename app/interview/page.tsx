@@ -3,6 +3,7 @@
 import NextButton from "@/components/Shared/NextButton";
 import Image from "next/image";
 import Link from "next/link";
+import ShahaduzZamanImage from "@/public/Shahaduz-Zaman.png";
 
 const interviews = [
   {
@@ -36,15 +37,32 @@ const InterviewPage = () => {
   return (
     <div className="pb-16">
       {/* Page Title Section */}
-      <div className="relative w-full h-[100px] border-t-2 border-[#FFCE00]">
+      <div className="relative w-full h-[350px] border-t-2 border-[#FFCE00]">
         <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 px-8 to-[#2D8CBB]/30 flex items-center">
-          <div className="max-w-screen-xl mx-auto flex justify-between items-center w-full px-16 flex-wrap gap-6">
-            <h1 className="text-5xl font-[1000] text-white">Interview</h1>
-            <p className="text-xl max-w-3xl text-gray-800 font-semibold my-8 text-justify w-full md:w-auto">
-              The interview section showcases the journeys and insights of
-              global health advocates, highlighting their impactful experiences
-              and perspectives.
+          <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <h1 className="text-5xl font-[1000] text-white w-[30%] -mt-36">
+              Interviews
+            </h1>
+            <p className="text-xl  text-gray-800 font-semibold my-8 text-justify md:w-auto w-[30%]">
+              &quot;An effective interview is a collaborative intellectual
+              adventure&quot; - Shahaduz Zaman
             </p>
+
+            <div className="w-[40%] mt-8">
+              <Image
+                src={ShahaduzZamanImage.src}
+                alt="Shahaduz Zaman"
+                width={ShahaduzZamanImage.width}
+                height={ShahaduzZamanImage.height}
+                className="w-[200px] mx-auto"
+              />
+              <p className="font-bold text-lg mt-2 text-center">
+                Dr. Shahaduz Zaman
+              </p>
+              <p className="text-center">
+                Medical Anthropologist and Bangladeshi Writer
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -161,3 +161,16 @@ h2 {
 .no-visible-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+/* Custom hover background color for .organization-card */
+.organization-card:nth-child(3n + 1):hover {
+  background-color: #ffecb3; /* Light Yellow */
+}
+
+.organization-card:nth-child(3n + 2):hover {
+  background-color: #cce7ff; /* Light Blue */
+}
+
+.organization-card:nth-child(3n + 3):hover {
+  background-color: #d3f9d8; /* Light Green */
+}
