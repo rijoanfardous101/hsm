@@ -20,18 +20,15 @@ export default function GiftForU() {
         </div>
       </div>
 
-      <div className="max-w-screen-lg py-8 mx-auto text-justify px-4">
-        <h3 className="text-xl">
-          <strong>Health Systems Matter</strong> is a knowledge platform guided
-          by the "Know Deeper, Do Better" approach. In this spirit, we have
-          created a comprehensive <strong>Knowledge Gift</strong> for our
-          followers. This unique resource provides valuable insights to support
-          your public health and development career.
-        </h3>
-        <h3 className="text-xl mt-4">
-          Explore and enjoy the Knowledge Gift by putting the information in the
-          box and get it in your email.
-        </h3>
+      <div className="max-w-screen-lg py-8 mx-auto text-justify px-4 text-lg">
+        Health Systems Matter (HSM) is a knowledge platform driven by the
+        principle — "Know Deeper, Do Better." In this spirit, we&apos;ve created
+        a Knowledge Gift for our followers — a resource to support your public
+        health and development journey. <br />
+        <br /> Simply enter the information below and subscribe to HSM
+        Newsletter to receive the Knowledge Gift in your email. <br />
+        <br /> Don&apos;t worry, HSM won&apos;t clog your inbox. HSM sends a
+        newsletter once a quarter.
       </div>
 
       <section className="max-w-screen-lg mx-auto w-full px-4">
@@ -59,18 +56,6 @@ export default function GiftForU() {
             Facebook
           </a>{" "}
           for the latest resources and updates.
-        </h3>
-        <h3 className="text-xl mt-4">
-          Subscribe to the Health Systems Matter{" "}
-          <a
-            href="https://newsletter.healthsystemsmatter.com" // Replace with actual Newsletter URL
-            className="text-blue-500 hover:underline"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Newsletter
-          </a>{" "}
-          for periodic insights and news in your email.
         </h3>
       </div>
     </div>
