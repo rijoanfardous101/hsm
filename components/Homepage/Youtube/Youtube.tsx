@@ -1,7 +1,7 @@
 import Image from "next/image";
-import bg from "@/public/youtube/youtube.webp";
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
+import YouTubePageImage from "@/public/Youtube-page-image.png";
 
 const Youtube = () => {
   return (
@@ -57,7 +57,7 @@ const Youtube = () => {
         {/* Image Section */}
         <div className="flex justify-center items-center max-w-2xl mx-auto">
           <Image
-            src={bg}
+            src={YouTubePageImage}
             alt="YouTube Channel"
             className="w-full h-96 rounded-lg shadow-lg"
           />
