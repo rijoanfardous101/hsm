@@ -104,7 +104,7 @@ const ContactSection = () => {
         "Thank you for your interest. Whether you have a question, are eager to collaborate, or simply want to connect, I’m always happy to hear from you. Even, any kind of feedback is also highly appreciated. Feel free to leave a message, and I’ll get back to you as soon as possible.",
       image:
         "https://images.unsplash.com/photo-1562240020-ce31ccb0fa7d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      link: "#",
+      link: "/contact/stay-connected",
     },
 
     {
@@ -113,7 +113,7 @@ const ContactSection = () => {
         "This is a volunteer-driven initiative, and we greatly appreciate any sponsorships or contributions to support the site and promote our page. We Value Collaboration! At Health Systems Matter, we welcome partnerships that align with our mission and vision.",
       image:
         "https://images.unsplash.com/photo-1581447109081-3656e3f87cbf?q=80&w=1552&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      link: "#",
+      link: "/contact/support-and-collaborate",
     },
     // {
     //   title: "Subscribe",

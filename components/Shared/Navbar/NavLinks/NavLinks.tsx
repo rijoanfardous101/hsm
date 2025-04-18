@@ -213,10 +213,16 @@ function Navbar({ className }: { className?: string }) {
           )}
         >
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/" active={isActiveLink("/")}>
+            <HoveredLink
+              href="/contact/stay-connected"
+              active={isActiveLink("/")}
+            >
               <Handshake className="w-4 h-4" /> STAY CONNECTED
             </HoveredLink>
-            <HoveredLink href="/" active={isActiveLink("/")}>
+            <HoveredLink
+              href="/contact/support-and-collaborate"
+              active={isActiveLink("/")}
+            >
               <MdPeople className="w-4 h-4" /> SUPPORT AND COLLABORATE
             </HoveredLink>
           </div>
