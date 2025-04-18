@@ -11,8 +11,8 @@ const VisionAndMissionPage = () => {
   return (
     <div className="bg-gradient-to-r from-[#01CAC2]/10 via-white to-[#01CAC2]/10">
       {/* Page Title Section */}
-      <div className="relative w-full h-[150px] border-t-2 border-[#FFCE00] ">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#01CAC2]/90 to-[#01CAC2]/30 flex items-center px-16">
+      <div className="relative w-full h-[80px] border-t-2 border-[#FFCE00] ">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center px-16">
           <div className="max-w-screen-xl mx-auto flex justify-center items-center w-full px-8 flex-wrap gap-6">
             <h1 className="text-4xl font-bold text-gray-800">
               Vision and Mission

@@ -94,11 +94,7 @@ const NewsPage = () => {
         ))}
       </div>
 
-      <NextButton
-        href="/newsletter"
-        text="Next"
-        className="bg-orange-500  mb-4"
-      />
+      <NextButton href="/newsletter" text="Next" />
     </div>
   );
 };

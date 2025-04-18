@@ -125,7 +125,7 @@ h2 {
     }
 
     .clip-left {
-      clip-path: polygon(0% 0%, 77% 0%, 100% 50%, 77% 100%, 0% 100%);
+      clip-path: polygon(0% 0%, 78% 0%, 100% 50%, 78% 100%, 0% 100%);
     }
 
     .clip-middle {

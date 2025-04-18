@@ -8,8 +8,8 @@ const ActivitiesAndApproachPage = () => {
   return (
     <div>
       {/* Page Title Section */}
-      <div className="relative w-full h-[150px] border-t-2 border-[#FFCE00] ">
-        <div className="absolute inset-0 bg-gradient-to-l from-[#8EDBED] to-[#8DDEF1] flex items-center px-16">
+      <div className="relative w-full h-[80px] border-t-2 border-[#FFCE00] ">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center px-16">
           <div className="max-w-screen-xl mx-auto flex justify-center items-center w-full px-8 flex-wrap gap-6">
             <h1 className="text-4xl font-bold text-gray-800">
               Activities and Approach

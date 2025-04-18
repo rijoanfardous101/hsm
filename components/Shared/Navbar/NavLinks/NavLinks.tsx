@@ -25,23 +25,23 @@ export function NavbarDemo() {
 
   const routeStyles: Record<string, { bg: string; text: string }> = {
     "/": { bg: "bg-[#2D8CBB]", text: "text-white" },
-    "/about/about-hsm": { bg: "bg-[#00DFC0]", text: "text-gray-800" },
-    "/about/vision-and-mission": { bg: "bg-[#01CAC2]", text: "text-gray-800" },
+    "/about/about-hsm": { bg: "bg-[#2D8CBB]", text: "text-white" },
+    "/about/vision-and-mission": { bg: "bg-[#2D8CBB]", text: "text-white" },
     "/about/activities-and-approach": {
-      bg: "bg-[#8EDBED]",
-      text: "text-gray-800",
+      bg: "bg-[#2D8CBB]",
+      text: "text-white",
     },
     "/about/why-health-systems-matter": {
-      bg: "bg-[#6ACBD4]",
-      text: "text-gray-800",
+      bg: "bg-[#2D8CBB]",
+      text: "text-white",
     },
     "/resources-and-bookmarks": { bg: "bg-[#2D8CBB]", text: "text-white" },
-    "/resources": { bg: "bg-[#01748D]", text: "text-white" },
-    "/resources/overview": { bg: "bg-blue-800", text: "text-white" },
-    "/contact": { bg: "bg-[#CDEDEC]", text: "text-gray-900" },
-    "/dashboard": { bg: "bg-gray-900", text: "text-gray-300" },
+    "/resources": { bg: "bg-[#2D8CBB]", text: "text-white" },
+    "/resources/overview": { bg: "bg-[#2D8CBB]", text: "text-white" },
+    "/contact": { bg: "bg-[#2D8CBB]", text: "text-white" },
+    "/dashboard": { bg: "bg-[#2D8CBB]", text: "text-white" },
     "/resources/essential-reading-list": {
-      bg: "bg-blue-700/90",
+      bg: "bg-[#2D8CBB]",
       text: "text-white",
     },
   };

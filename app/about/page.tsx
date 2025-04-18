@@ -102,7 +102,7 @@ const AboutPage = () => {
   return (
     <div className=" bg-gradient-to-r from-[#2D8CBB]/10 via-white to-[#2D8CBB]/10">
       {/* Page Title Section */}
-      <div className="relative w-full h-auto md:h-[120px] border-t-2 border-[#FFCE00]">
+      <div className="relative w-full h-auto md:h-[90px] border-t-2 border-[#FFCE00]">
         <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center">
           <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center w-full px-6 md:px-16 py-4 md:py-0 gap-4 md:gap-6">
             <h1 className="text-2xl md:text-4xl font-extrabold text-white">

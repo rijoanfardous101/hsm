@@ -1,24 +1,8 @@
 "use client";
-// import {
-//   FaBook,
-//   FaHeartbeat,
-//   FaUniversity,
-//   FaInfoCircle,
-//   FaYoutube,
-// } from "react-icons/fa";
-// import { GrOverview } from "react-icons/gr";
 import { motion } from "framer-motion";
 import BookMarksSectionCard from "@/components/ui/BookMarksSectionCard";
-// import {
-//   Breadcrumb,
-//   BreadcrumbItem,
-//   BreadcrumbList,
-//   BreadcrumbSeparator,
-// } from "@/components/ui/breadcrumb";
-// import Link from "next/link";
-import NextButton from "@/components/Shared/NextButton";
 
-// import OverviewImg from "@/public/resources/overviewicon.png";
+import NextButton from "@/components/Shared/NextButton";
 
 const bookmarksData = [
   {
@@ -108,8 +92,8 @@ const BookmarksPage = () => {
   return (
     <div className="bg-gradient-to-r from-[#01748D]/10 via-white to-[#01748D]/10">
       {/* Page Title Section */}
-      <div className="relative w-full h-[120px] border-t-2 border-[#FFCE00]">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#01748D]/90  to-[#01748D]/30 flex items-center">
+      <div className="relative w-full h-[80px] border-t-2 border-[#FFCE00]">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center">
           <div className="max-w-screen-xl mx-auto flex justify-between items-center w-full px-16 flex-wrap gap-6">
             <h1 className=" md:text-4xl font-bold text-white">Resources</h1>
             <p className="text-xl max-w-3xl text-gray-100 font-semibold my-8 text-justify w-full md:w-auto">
@@ -119,36 +103,6 @@ const BookmarksPage = () => {
           </div>
         </div>
       </div>
-
-      {/* <Breadcrumb className="py-4 px-16 max-w-screen-xl mx-auto border-b">
-                <BreadcrumbList>
-                    <BreadcrumbItem>
-                        <Link href="/" className="text-gray-500">
-                            HOME
-                        </Link>
-                    </BreadcrumbItem>
-
-                    <BreadcrumbSeparator className="text-gray-600" />
-                    <BreadcrumbItem>
-                        <Link
-                            href="/resources-and-bookmarks"
-                            className="text-gray-500"
-                        >
-                            RESOURCES & BOOKMARKS
-                        </Link>
-                    </BreadcrumbItem>
-
-                    <BreadcrumbSeparator className="text-gray-600" />
-                    <BreadcrumbItem>
-                        <Link
-                            href="/resources"
-                            className="bg-[#FFCE00] text-black px-2 rounded-sm py-1"
-                        >
-                            Resources
-                        </Link>
-                    </BreadcrumbItem>
-                </BreadcrumbList>
-            </Breadcrumb> */}
 
       {/* Content */}
       <div className="max-w-screen-xl mx-auto pt-8 pb-16 px-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -171,11 +125,7 @@ const BookmarksPage = () => {
         ))}
       </div>
 
-      <NextButton
-        href="/bookmarks"
-        text="Next"
-        className="bg-[#01748D]  mb-4"
-      />
+      <NextButton href="/bookmarks" text="Next" className="bg-[#01748D]" />
     </div>
   );
 };

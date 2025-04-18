@@ -4,10 +4,22 @@ import { motion } from "framer-motion";
 
 const steps = [
   //   { text: "HSM Offers", bg: "bg-blue-800", clip: "clip-right" },
-  { text: "Resources", bg: "bg-[#1E60AC]", clip: "clip-left mr-[-28px]" },
-  { text: "Insights", bg: "bg-[#208BD1]", clip: "clip-middle mr-[-26px]" },
-  { text: "Events", bg: "bg-[#2E8ED2]", clip: "clip-middle" },
-  { text: "Career", bg: "bg-[#35A6EA]", clip: "clip-middle" },
+  { text: "Resources", bg: "bg-[#1E60AC]", clip: "clip-left mr-[-26.5px]" },
+  {
+    text: "Insights",
+    bg: "bg-[#208BD1]",
+    clip: "clip-middle mr-[-26px] w-[116px] text-center pl-9",
+  },
+  {
+    text: "Events",
+    bg: "bg-[#2E8ED2]",
+    clip: "clip-middle w-[116px] text-center pl-9",
+  },
+  {
+    text: "Career",
+    bg: "bg-[#35A6EA]",
+    clip: "clip-middle w-[112px] text-center pl-9",
+  },
 ];
 
 export default function StepArrows() {

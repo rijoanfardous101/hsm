@@ -1,9 +1,5 @@
-import {
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbList,
-  BreadcrumbSeparator,
-} from "@/components/ui/breadcrumb";
+import NextButton from "@/components/Shared/NextButton";
+
 import Image from "next/image";
 import Link from "next/link";
 // import { FaBook, FaFileAlt, FaClipboardList } from "react-icons/fa";
@@ -12,8 +8,8 @@ const ResourcesOverview = () => {
   return (
     <div className="">
       {/* Page Title Section */}
-      <div className="relative w-full h-[150px] border-t-2 border-[#FFCE00]">
-        <div className="absolute inset-0 bg-gradient-to-b from-blue-800/90 to-blue-500/30 flex items-center">
+      <div className="relative w-full h-[85px] border-t-2 border-[#FFCE00]">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center">
           <div className="max-w-screen-xl mx-auto flex  justify-center items-center w-full px-6 md:px-16 gap-4">
             <h1 className="text-4xl text-center font-bold text-white ">
               Overview
@@ -21,40 +17,6 @@ const ResourcesOverview = () => {
           </div>
         </div>
       </div>
-
-      {/* Breadcrumbs */}
-      <Breadcrumb className="py-4 px-16 max-w-screen-xl mx-auto border-b">
-        <BreadcrumbList>
-          <BreadcrumbItem>
-            <Link href="/" className="text-gray-500">
-              HOME
-            </Link>
-          </BreadcrumbItem>
-
-          <BreadcrumbSeparator className="text-gray-600" />
-          <BreadcrumbItem>
-            <Link href="/resources-and-bookmarks" className="text-gray-500">
-              RESOURCES & BOOKMARKS
-            </Link>
-          </BreadcrumbItem>
-
-          <BreadcrumbSeparator className="text-gray-600" />
-          <BreadcrumbItem>
-            <Link href="/resources" className="text-gray-600 ">
-              Resources
-            </Link>
-          </BreadcrumbItem>
-          <BreadcrumbSeparator className="text-gray-600" />
-          <BreadcrumbItem>
-            <Link
-              href="/resources/overview"
-              className="text-gray-800 underline"
-            >
-              Overview
-            </Link>
-          </BreadcrumbItem>
-        </BreadcrumbList>
-      </Breadcrumb>
 
       {/* Content Section with Sidebar */}
       <div className="bg-white">
@@ -149,6 +111,12 @@ const ResourcesOverview = () => {
           </div>
         </div>
       </div>
+
+      <NextButton
+        href="/resources/essential-reading-list"
+        text="Next"
+        className="bg-[#00DFC0] text-black"
+      />
     </div>
   );
 };

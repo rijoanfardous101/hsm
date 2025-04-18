@@ -5,44 +5,20 @@ import Image from "next/image";
 // import Link from "next/link";
 import AboutHSMImage from "@/public/about/about.jpg";
 import NextButton from "@/components/Shared/NextButton";
+import Link from "next/link";
 
 const AboutHSM = () => {
   return (
     <div>
       {/* Page Title Section */}
-      <div className="relative w-full h-[150px] border-t-2 border-[#FFCE00] ">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#00DFC0]/90 to-[#00DFC0]/30 flex items-center px-16">
+      <div className="relative w-full h-[80px] border-t-2 border-[#FFCE00] ">
+        <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center px-16">
           <div className="max-w-screen-xl mx-auto flex justify-center items-center w-full px-8 flex-wrap gap-6">
             <h1 className="text-4xl font-bold text-gray-800">About HSM</h1>
             <p className="text-2xl max-w-3xl text-gray-800 font-semibold my-8 text-justify w-full md:w-auto"></p>
           </div>
         </div>
       </div>
-
-      {/* <div className="bg-gradient-to-r from-[#00DFC0]/10 via-white to-[#00DFC0]/10">
-        <Breadcrumb className="py-4 px-16 max-w-screen-xl mx-auto">
-          <BreadcrumbList>
-            <BreadcrumbItem>
-              <Link href="/" className="hover:underline ">
-                HOME
-              </Link>
-            </BreadcrumbItem>
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <Link href="/about" className="hover:underline ">
-                ABOUT
-              </Link>
-            </BreadcrumbItem>
-
-            <BreadcrumbSeparator />
-            <BreadcrumbItem>
-              <BreadcrumbPage className="underline cursor-pointer">
-                About HSM
-              </BreadcrumbPage>
-            </BreadcrumbItem>
-          </BreadcrumbList>
-        </Breadcrumb>
-      </div> */}
 
       <div className="bg-gradient-to-r from-[#00DFC0]/10 via-white to-[#00DFC0]/10">
         <div className="max-w-screen-lg mx-auto px-16 min-h-dvh">
@@ -98,10 +74,10 @@ const AboutHSM = () => {
                 </ul>
               </div>
 
-              <p>
+              <p className="font-bold">
                 Health Systems Matter was launched on social media (
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/monaemulsizear/"
                   className="text-blue-600 underline hover:text-blue-800"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -110,7 +86,7 @@ const AboutHSM = () => {
                 </a>
                 ,{" "}
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/monaemul.sizear"
                   className="text-blue-600 underline hover:text-blue-800"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -121,16 +97,15 @@ const AboutHSM = () => {
                 2025, to systematically preserve all posted resources.
               </p>
 
-              <p>
+              <p className="font-bold">
                 The site, passionately maintained by{" "}
-                <a
-                  href="https://example.com/about-sizear"
+                <Link
+                  href="/sizear"
                   className="text-blue-600 underline hover:text-blue-800"
-                  target="_blank"
                   rel="noopener noreferrer"
                 >
                   Monaemul Islam Sizear
-                </a>
+                </Link>
                 , aims to enlighten many and foster impactful careers.
               </p>
             </div>
