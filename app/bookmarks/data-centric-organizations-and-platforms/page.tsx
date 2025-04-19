@@ -2,12 +2,56 @@ import { FeaturedBookmarks } from "../overview/page";
 
 const organizations = [
   {
-    name: "Think Global Health – Interviews",
-    url: "https://www.thinkglobalhealth.org/type/interviews?utm_source=chatgpt.com",
+    name: "Public Health Informatics Institute (PHII)",
+    url: "https://phii.org/",
   },
   {
-    name: "Global Health Youth Connect – Expert Interviews",
-    url: "https://www.ghyc.org.au/interview-with-experts",
+    name: "Institute for Health Metrics and Evaluation (IHME)",
+    url: "https://www.healthdata.org/",
+  },
+  {
+    name: "Data.org",
+    url: "https://data.org/",
+  },
+  {
+    name: "Data International",
+    url: "http://www.dataint.com/",
+  },
+  {
+    name: "Our World in Data",
+    url: "https://ourworldindata.org/",
+  },
+  {
+    name: "Data.World",
+    url: "https://data.world/",
+  },
+  {
+    name: "DataBD (Bangladesh)",
+    url: "https://databd.co/",
+  },
+  {
+    name: "Data Partnership",
+    url: "https://datapartnership.org/",
+  },
+  {
+    name: "Poverty Evidence",
+    url: "https://povertyevidence.org/",
+  },
+  {
+    name: "ONE Data (Data by ONE Campaign)",
+    url: "https://data.one.org/",
+  },
+  {
+    name: "AidData",
+    url: "https://www.aiddata.org/",
+  },
+  {
+    name: "GlobalData",
+    url: "https://www.globaldata.com/",
+  },
+  {
+    name: "Statista",
+    url: "https://www.statista.com/",
   },
 ];
 
@@ -19,7 +63,7 @@ const CommentariesAndBlogs = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center">
           <div className="max-w-screen-xl mx-auto flex  justify-center items-center w-full px-6 md:px-16 gap-4">
             <h1 className="text-4xl text-center font-bold text-white ">
-              Interviews Sites on Global Health and More
+              Data-Centric Organizations and Platforms
             </h1>
           </div>
         </div>

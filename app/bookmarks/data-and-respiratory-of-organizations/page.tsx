@@ -2,12 +2,28 @@ import { FeaturedBookmarks } from "../overview/page";
 
 const organizations = [
   {
-    name: "Think Global Health – Interviews",
-    url: "https://www.thinkglobalhealth.org/type/interviews?utm_source=chatgpt.com",
+    name: "WHO Global Health Data",
+    url: "https://data.who.int/",
   },
   {
-    name: "Global Health Youth Connect – Expert Interviews",
-    url: "https://www.ghyc.org.au/interview-with-experts",
+    name: "WHO Health Topics",
+    url: "https://www.who.int/health-topics/",
+  },
+  {
+    name: "UNICEF Data",
+    url: "https://data.unicef.org/",
+  },
+  {
+    name: "World Bank Open Data",
+    url: "https://data.worldbank.org/",
+  },
+  {
+    name: "UNFPA Data",
+    url: "https://www.unfpa.org/data",
+  },
+  {
+    name: "CDC Public Health Data",
+    url: "https://data.cdc.gov/",
   },
 ];
 
@@ -19,7 +35,7 @@ const CommentariesAndBlogs = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-[#2D8CBB]/90 to-[#2D8CBB]/30 flex items-center">
           <div className="max-w-screen-xl mx-auto flex  justify-center items-center w-full px-6 md:px-16 gap-4">
             <h1 className="text-4xl text-center font-bold text-white ">
-              Interviews Sites on Global Health and More
+              Data and Respiratory of Organizations
             </h1>
           </div>
         </div>

@@ -1,23 +1,4 @@
-// import { FaBook, FaFileAlt, FaClipboardList } from "react-icons/fa";
-import {
-  BookOpen,
-  FileText,
-  Bookmark,
-  Scroll,
-  BarChart,
-  Globe,
-  Database,
-  Users,
-  Activity,
-  GraduationCap,
-  Briefcase,
-  Search,
-  Newspaper,
-  Youtube,
-  Mic,
-} from "lucide-react";
-// import Image from "next/image";
-import Link from "next/link";
+import { FeaturedBookmarks } from "../overview/page";
 
 const organizations = [
   {
@@ -162,74 +143,6 @@ const organizations = [
   },
 ];
 
-const bookmarks = [
-  {
-    href: "/bookmarks/essential-reading-list",
-    icon: <BookOpen />,
-    text: "Key Public Health Organizations",
-  },
-  {
-    href: "/bookmarks/reports",
-    icon: <FileText />,
-    text: "Reports and Publications",
-  },
-  { href: "/bookmarks/books", icon: <Bookmark />, text: "Journals" },
-  {
-    href: "/bookmarks/policy-briefs",
-    icon: <Scroll />,
-    text: "Commentaries and Blogs",
-  },
-  {
-    href: "/bookmarks/presentations",
-    icon: <BarChart />,
-    text: "Interviews & Insights on Global Health",
-  },
-  {
-    href: "/bookmarks/tools",
-    icon: <Globe />,
-    text: "Useful Platforms and Tools",
-  },
-  {
-    href: "/bookmarks/data-facts",
-    icon: <Database />,
-    text: "Data and Facts",
-  },
-  {
-    href: "/bookmarks/organizations",
-    icon: <Users />,
-    text: "Data Repository of Organizations",
-  },
-  {
-    href: "/bookmarks/data-centric",
-    icon: <Activity />,
-    text: "Data-Centric Organizations and Platforms",
-  },
-  {
-    href: "/bookmarks/public-health-data",
-    icon: <Globe />,
-    text: "Data on Public Health Issues",
-  },
-  {
-    href: "/bookmarks/training",
-    icon: <GraduationCap />,
-    text: "Training and Courses",
-  },
-  {
-    href: "/bookmarks/career-scope",
-    icon: <Briefcase />,
-    text: "Career Scope",
-  },
-  { href: "/bookmarks/jobs", icon: <Search />, text: "Job Sites" },
-  {
-    href: "/bookmarks/scholarships",
-    icon: <GraduationCap />,
-    text: "Scholarship and Fellowship Opportunities",
-  },
-  { href: "/bookmarks/newsletter", icon: <Newspaper />, text: "Newsletter" },
-  { href: "/bookmarks/youtube", icon: <Youtube />, text: "YouTube" },
-  { href: "/bookmarks/podcast", icon: <Mic />, text: "Podcast" },
-];
-
 const Journals = () => {
   return (
     <div className="pb-16">
@@ -264,24 +177,7 @@ const Journals = () => {
             </div>
 
             {/* Right Featured Resources Section */}
-            <div className="bg-gray-100 p-6 border border-gray-200 shadow-sm self-start">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                Featured Bookmarks
-              </h2>
-              <ul className="space-y-4">
-                {bookmarks.map((item, index) => (
-                  <li key={index}>
-                    <Link
-                      href={item.href}
-                      className="flex items-center space-x-2 text-blue-800 hover:text-[#F18A00] transition"
-                    >
-                      {item.icon}
-                      <span className="hover:underline">{item.text}</span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <FeaturedBookmarks />
           </div>
         </div>
       </div>

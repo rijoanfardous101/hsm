@@ -21,53 +21,57 @@ import Link from "next/link";
 
 const bookmarks = [
   {
-    href: "/bookmarks/essential-reading-list",
+    href: "/bookmarks/key-public-health-organizations",
     icon: <BookOpen />,
     text: "Key Public Health Organizations",
   },
   {
-    href: "/bookmarks/reports",
+    href: "/bookmarks/reports-and-publications",
     icon: <FileText />,
     text: "Reports and Publications",
   },
-  { href: "/bookmarks/books", icon: <Bookmark />, text: "Journals" },
   {
-    href: "/bookmarks/policy-briefs",
+    href: "/bookmarks/journals",
+    icon: <Bookmark />,
+    text: "Journals",
+  },
+  {
+    href: "/bookmarks/commentaries-blogs",
     icon: <Scroll />,
     text: "Commentaries and Blogs",
   },
   {
-    href: "/bookmarks/presentations",
+    href: "/bookmarks/interviews-sites",
     icon: <BarChart />,
     text: "Interviews & Insights on Global Health",
   },
   {
-    href: "/bookmarks/tools",
+    href: "/bookmarks/useful-platforms-and-tools",
     icon: <Globe />,
     text: "Useful Platforms and Tools",
   },
   {
-    href: "/bookmarks/data-facts",
+    href: "/bookmarks/data-and-facts",
     icon: <Database />,
     text: "Data and Facts",
   },
   {
-    href: "/bookmarks/organizations",
+    href: "/bookmarks/data-and-respiratory-of-organizations",
     icon: <Users />,
     text: "Data Repository of Organizations",
   },
   {
-    href: "/bookmarks/data-centric",
+    href: "/bookmarks/data-centric-organizations-and-platforms",
     icon: <Activity />,
     text: "Data-Centric Organizations and Platforms",
   },
   {
-    href: "/bookmarks/public-health-data",
+    href: "/bookmarks/data-on-topic-and-public-health-issues",
     icon: <Globe />,
     text: "Data on Public Health Issues",
   },
   {
-    href: "/bookmarks/training",
+    href: "/bookmarks/training-and-courses",
     icon: <GraduationCap />,
     text: "Training and Courses",
   },
@@ -76,16 +80,33 @@ const bookmarks = [
     icon: <Briefcase />,
     text: "Career Scope",
   },
-  { href: "/bookmarks/jobs", icon: <Search />, text: "Job Sites" },
   {
-    href: "/bookmarks/scholarships",
+    href: "/bookmarks/job-sites",
+    icon: <Search />,
+    text: "Job Sites",
+  },
+  {
+    href: "/bookmarks/scholarship-and-fellowship-opportunities",
     icon: <GraduationCap />,
     text: "Scholarship and Fellowship Opportunities",
   },
-  { href: "/bookmarks/newsletter", icon: <Newspaper />, text: "Newsletter" },
-  { href: "/bookmarks/youtube", icon: <Youtube />, text: "YouTube" },
-  { href: "/bookmarks/podcast", icon: <Mic />, text: "Podcast" },
+  {
+    href: "/bookmarks/newsletter",
+    icon: <Newspaper />,
+    text: "Newsletter",
+  },
+  {
+    href: "/bookmarks/youtube",
+    icon: <Youtube />,
+    text: "YouTube",
+  },
+  {
+    href: "/bookmarks/podcast",
+    icon: <Mic />,
+    text: "Podcast",
+  },
 ];
+
 const ResourcesOverview = () => {
   return (
     <div className="pb-16">
@@ -133,24 +154,7 @@ const ResourcesOverview = () => {
             </div>
 
             {/* Right Featured Resources Section */}
-            <div className="bg-gray-100 p-6 border border-gray-200 shadow-sm self-start">
-              <h2 className="text-xl font-semibold text-gray-800 mb-4">
-                Featured Bookmarks
-              </h2>
-              <ul className="space-y-4">
-                {bookmarks.map((item, index) => (
-                  <li key={index}>
-                    <Link
-                      href={item.href}
-                      className="flex items-center space-x-2 text-blue-800 hover:text-[#F18A00] transition"
-                    >
-                      {item.icon}
-                      <span className="hover:underline">{item.text}</span>
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <FeaturedBookmarks />
           </div>
         </div>
       </div>
@@ -159,3 +163,26 @@ const ResourcesOverview = () => {
 };
 
 export default ResourcesOverview;
+
+export const FeaturedBookmarks = function () {
+  return (
+    <div className="bg-gray-100 p-6 border border-gray-200 shadow-sm self-start">
+      <h2 className="text-xl font-semibold text-gray-800 mb-4">
+        Featured Bookmarks
+      </h2>
+      <ul className="space-y-4">
+        {bookmarks.map((item, index) => (
+          <li key={index}>
+            <Link
+              href={item.href}
+              className="flex items-center space-x-2 text-blue-800 hover:text-[#F18A00] transition"
+            >
+              {item.icon}
+              <span className="hover:underline">{item.text}</span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
